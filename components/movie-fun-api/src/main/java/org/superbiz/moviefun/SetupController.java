@@ -14,10 +14,13 @@ import java.util.Map;
 @Controller
 public class SetupController {
 
-    private final MoviesClient moviesClient;
-    private final AlbumsClient albumsClient;
-    private final MovieFixtures movieFixtures;
-    private final AlbumFixtures albumFixtures;
+    private  final MoviesClient moviesClient;
+    private  final AlbumsClient albumsClient;
+    private  final MovieFixtures movieFixtures;
+    private  final AlbumFixtures albumFixtures;
+   /* public SetupController(){
+
+    }*/
 
     public SetupController(MoviesClient moviesClient, AlbumsClient albumsClient, MovieFixtures movieFixtures, AlbumFixtures albumFixtures) {
         this.moviesClient = moviesClient;

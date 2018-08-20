@@ -1,5 +1,6 @@
 package org.superbiz.moviefun.albumsapi;
 
+
 import org.apache.tika.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,16 +26,16 @@ import static java.lang.String.format;
 public class AlbumsController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-    private final AlbumsClient albumsClient;
-    private final BlobStore blobStore;
+    private  AlbumsClient albumsClient;
+    private  BlobStore blobStore;
+    public AlbumsController(){
 
-
+    }
 
     public AlbumsController(AlbumsClient albumsClient, BlobStore blobStore) {
         this.albumsClient = albumsClient;
         this.blobStore = blobStore;
     }
-
 
     @GetMapping
     public String index(Map<String, Object> model) {

@@ -16,6 +16,11 @@ logging.level:
   org.superbiz.moviefun: DEBUG
 
 s3:
-  accessKey: <access key id>
-  secretKey: <secret access key>
-  bucketName: <name of the bucket>
+  accessKey: AKIAJZ7VEOXFTVQ4SMRA
+  secretKey: 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
+  bucketName: cf-pvtl-trainee-usr12
+
+albums:
+  url: http://localhost:8081/albums
+movies:
+  url: http://localhost:8082/movies
